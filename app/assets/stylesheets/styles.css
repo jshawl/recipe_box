@@ -1,0 +1,23 @@
+body {
+  background-color: #ECECEA;
+}
+h1, h3 {
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+p{
+  font-size: 1.25em;
+}
+.container_flex {
+  display: flex;
+}
+.child_flex {
+  flex-grow: 1;
+}
+.container_index {
+  width:60%;
+  margin: 0 auto;
+}

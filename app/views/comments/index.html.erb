@@ -1,0 +1,17 @@
+<h2>Welcome to Recipe Box</h2>
+<h3>View Comments</h3>
+
+<div class="container_index">
+  <div class="recipe">
+      <h3><%= @recipe.title %></h3>
+      <p><%= image_tag @recipe.photo_url %></p>
+  </div>
+
+<% @comments.each do |comment| %>
+  <div class="comment">
+    <p><%= comment.content %></p>
+    <p><%= time_ago_in_words comment.created_at %> ago</p>
+  </div>
+<% end %>
+<%= link_to "Home" , recipes_path %>
+<%= link_to "Add a Comment" , new_recipe_comment_path(@recipe) %>
