@@ -2,13 +2,19 @@
 
 
 
-<div class="recipe">
-    <h3><%= @recipe.title %></h3>
-    <p><%= image_tag @recipe.photo_url %></p>    <!-- Need to make sure of syntax -->
+<h3><%= @recipe.title %></h3>
+<div class="container_flex">
+  <div class="child_flex">
+      <%= image_tag @recipe.photo_url %>
+  </div>
+  <div class="child_flex">
+      <p>Ingredients: <%= @recipe.ingredients %></p>
+  </div>
 </div>
+<p>Preparation: <%= @recipe.directions %></p>
 
 <div class="comment">
-  <p><%= @comment.content %></p>
+  <p>Comment: <%= @comment.content %></p>
   <p><%= @comment.created_at %></p>
 </div>
 

@@ -2,3 +2,8 @@
 <h3>Edit Comment</h3>
 
 <%= render partial: "form" %>
+
+
+
+<%= link_to "Home" , recipes_path %>
+<%= link_to "Delete", recipe_comment_path(@recipe, @comment), method: :delete %>

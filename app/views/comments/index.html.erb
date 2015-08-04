@@ -1,16 +1,24 @@
 <h2>Welcome to Recipe Box</h2>
 <h3>View Comments</h3>
 
-<div class="container_index">
-  <div class="recipe">
-      <h3><%= @recipe.title %></h3>
-      <p><%= image_tag @recipe.photo_url %></p>
+<h3><%= @recipe.title %></h3>
+<div class="container_flex">
+  <div class="child_flex">
+      <%= image_tag @recipe.photo_url %>
   </div>
+  <div class="child_flex">
+      <p>Ingredients: <%= @recipe.ingredients %></p>
+  </div>
+</div>
+<p>Preparation: <%= @recipe.directions %></p>
+
 
 <% @comments.each do |comment| %>
   <div class="comment">
-    <p><%= comment.content %></p>
+    <h4>Comments:</h4>
+    <p>--<%= comment.content %></p>
     <p><%= time_ago_in_words comment.created_at %> ago</p>
+    <%= link_to 'Edit or Delete Comment' , edit_recipe_comment_path(@recipe, comment) %>
   </div>
 <% end %>
 <%= link_to "Home" , recipes_path %>
