@@ -31,16 +31,16 @@ header {
   top:0;
 
 }
-nav {
+nav.main_nav {
   text-align: right;
   padding-right: 1em;
   display: inline-block;
-  width: 40%;
+  width: 50%;
   position:absolute;
   top: 12%;
   right: 5%;
 }
-nav > a {
+nav.main_nav > a {
     padding-right: 1em;
     margin: 1em 0;
     line-height: 3em;
@@ -48,7 +48,7 @@ nav > a {
     text-decoration: none;
 }
 nav > a:hover {
-  color: rgb(217,133,59)
+  color: rgb(217,133,59);
 }
 .logo {
   display: inline-bock;
@@ -101,6 +101,21 @@ p{
   border-radius: 25px;
   box-shadow: 2px 2px 5px;
 }
+
+/***********  CONVERTER  ***********/
+
+nav.temp_nav {
+  text-align: center;
+}
+
+nav.temp_nav > a {
+    margin: 1em 0;
+    color: #74AFAD;
+    text-decoration: none;
+}
+
+
+
 
 
 /***********  FORMS  ***********/

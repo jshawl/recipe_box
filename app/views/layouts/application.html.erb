@@ -10,11 +10,13 @@
 <body>
   <header>
     <h1 class="logo">Recipe Box</h1>
-    <nav>
+    <nav class="main_nav">
     <% if session[:user] %>
       <%= link_to "Home" , recipes_path %>
       <%= link_to "User Home" , user_recipes_path %>
       <%= link_to "Create New Recipe" , new_recipe_path(@recipe) %>
+      <%= link_to "Temps" , temp_path %>
+      <%= link_to "Converter" , converter_path %>
       <a href="/sign_out"><%= session[:user]["username"] %>: sign out</a>
     <% else %>
       <a href="/sign_in">Sign in</a>

@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   resources :recipes do
     resources :comments
   end
-
+  get '/converter', to: 'pages#converter'
+  get '/temp', to: 'pages#temp'
   get '/user/recipes', to: 'users#index'
   get '/sign_in', to: 'users#sign_in'
   post '/sign_in', to: 'users#sign_in!'
