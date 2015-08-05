@@ -2,12 +2,27 @@
 <html>
 <head>
   <title>RecipeBox</title>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <header>
+    <h1 class="logo">Recipe Box</h1>
+    <nav>
+    <% if session[:user] %>
+      <%= link_to "Home" , recipes_path %>
+      <%= link_to "User Home" , user_recipes_path %>
+      <%= link_to "Create New Recipe" , new_recipe_path(@recipe) %>
+      <a href="/sign_out"><%= session[:user]["username"] %>: sign out</a>
+    <% else %>
+      <a href="/sign_in">Sign in</a>
+      <a href="/sign_up">Sign up</a>
+    <% end %>
+    </nav>
+  </header>
+  <h2 class="flash"><%= flash[:notice] %></h2>
 <%= yield %>
 
 </body>

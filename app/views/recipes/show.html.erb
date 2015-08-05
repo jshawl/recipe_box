@@ -1,19 +1,27 @@
-<h2>Welcome to Recipe Box</h2>
+
 
 
 <h3><%= @recipe.title %></h3>
-<div class="container_flex">
-  <div class="child_flex">
-      <%= image_tag @recipe.photo_url %>
-  </div>
-  <div class="child_flex">
+<div class="container_show_flex">
+  <div class="child_show_flex">
       <p>Ingredients: <%= @recipe.ingredients %></p>
   </div>
+  <div class="child_show_flex">
+      <%= image_tag @recipe.photo_url %>
+  </div>
 </div>
-<p>Preparation: <%= @recipe.directions %></p>
 
-<%= link_to "Home" , recipes_path %>
-<%= link_to 'View comments' , recipe_comments_path(@recipe) %>
-<%= link_to "Add a Comment" ,  new_recipe_comment_path(@recipe)  %>
-<%= link_to "Edit Recipe" , edit_recipe_path(@recipe) %>
-<%= link_to "Delete", recipe_path(@recipe), method: :delete %>
+
+<div class="prep">
+  <p>Preparation: <%= @recipe.directions %></p>
+
+
+  <%= link_to 'View comments' , recipe_comments_path(@recipe) %>
+  <%= link_to "Add a Comment" ,  new_recipe_comment_path(@recipe)  %>
+  <%= link_to "Edit Recipe" , edit_recipe_path(@recipe) %>
+  <%= link_to "Delete", recipe_path(@recipe), method: :delete %>
+</div>
+
+<footer>
+
+</footer>

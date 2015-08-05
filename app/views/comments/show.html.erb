@@ -1,13 +1,13 @@
-<h2>Welcome to Recipe Box</h2>
+
 
 
 
 <h3><%= @recipe.title %></h3>
-<div class="container_flex">
-  <div class="child_flex">
+<div class="container_show_flex">
+  <div class="child_show_flex">
       <%= image_tag @recipe.photo_url %>
   </div>
-  <div class="child_flex">
+  <div class="child_show_flex">
       <p>Ingredients: <%= @recipe.ingredients %></p>
   </div>
 </div>
@@ -19,7 +19,11 @@
 </div>
 
 
-<%= link_to "Home" , recipes_path %>
 <%= link_to "Comments" ,  new_recipe_comment_path(@recipe)  %>
 <%= link_to "Edit Comment" , edit_recipe_comment_path(@recipe, @comment) %>
 <%= link_to "Delete", recipe_comment_path(@recipe,@comment), method: :delete %>
+
+
+<footer>
+
+</footer>  
