@@ -3,14 +3,15 @@
   <%= f.label :title %>
   <%= f.text_field :title %>
 
-  <%= f.label :ingredients %>
-  <%= f.text_area :ingredients %>
-
-  <%= f.label :directions %>
-  <%= f.text_area :directions %>
-
   <%= f.label :photo_url %>
   <%= f.text_field :photo_url %>
+
+  <%= f.label :ingredients %>
+  <%= f.text_area :ingredients,  :class => 'form_fix' %>
+
+  <%= f.label :directions %>
+  <%= f.text_area :directions , :class => 'form_fix' %>
+
 
   <%= f.submit %>
 
