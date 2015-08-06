@@ -2,12 +2,12 @@
 
 
 <h3><%= @recipe.title %></h3>
-<div class="container_show_flex">
-  <div class="child_show_flex">
+<div class="container_show">
+  <div class="child_show">
       <h4>Ingredients:</h4>
       <p class="indent"><%= @recipe.ingredients %></p>
   </div>
-  <div class="child_show_flex">
+  <div class="child_show">
       <%= image_tag @recipe.photo_url %>
   </div>
 </div>
@@ -15,7 +15,7 @@
 
 <div class="prep">
   <h4>Preparation:</h4>
-  <p class="indent"><%= @recipe.directions %></p>
+  <p><%= @recipe.directions %></p>
 
 
   <%= link_to 'View comments' , recipe_comments_path(@recipe) %>
@@ -23,7 +23,3 @@
   <%= link_to "Edit Recipe" , edit_recipe_path(@recipe) %>
   <%= link_to "Delete", recipe_path(@recipe), method: :delete %>
 </div>
-
-<footer>
-
-</footer>

@@ -9,10 +9,8 @@ class UsersController < ApplicationController
   def show
       @recipe = Recipe.find(params[:id])
   end
-
   def sign_up
   end
-
   def sign_up!
     user = User.new(
       username: params[:username],
@@ -29,10 +27,8 @@ class UsersController < ApplicationController
     flash[:notice] = message
     redirect_to action: :sign_in
   end
-
   def sign_in
   end
-
   def sign_in!
     @user = User.find_by(username: params[:username])
     if !@user
@@ -50,11 +46,9 @@ class UsersController < ApplicationController
     flash[:notice] = message
     redirect_to recipes_path
   end
-
    def sign_out
      reset_session
      flash[:notice] = "Signed out, happy cooking!!!"
      redirect_to root_url
    end
-
 end

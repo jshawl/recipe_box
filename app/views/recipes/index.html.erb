@@ -2,8 +2,8 @@
 
 
 
-<%= form_tag(recipes_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Search Ingredients" %>
+<%= form_tag(recipes_path, :method => "get", id: "search-form" ) do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search Ingredients to find Recipes" %>
       <button class="btn" type="submit">Search</button>
 <% end %>
 
@@ -15,9 +15,3 @@
   </div>
   <% end %>
 </div>
-
-
-
-<footer>
-
-</footer>

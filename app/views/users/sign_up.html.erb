@@ -1,6 +1,6 @@
 
 <h2>Sign up</h2>
-<%= form_tag("/sign_up", method: "post") do %>
+<%= form_tag sign_up_path , method: :post, :class => 'sign_form' do %>
   <input type="text" name="username" placeholder="username" />
   <input type="text" name="useremail" placeholder="useremail" />
   <input type="password" name="password" placeholder="password" />

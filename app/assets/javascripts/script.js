@@ -1,6 +1,4 @@
 $( document).ready (function(){
-  // your code here?
-
 
   $("#poultry").on( "click" , function(){
     $(".hide").addClass("temps_hide");
