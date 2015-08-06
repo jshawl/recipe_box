@@ -1,4 +1,4 @@
-<%= form_for @recipe do |f| %>
+<%= form_for @recipe, :html => {:class => 'new_form'} do |f| %>
 
   <%= f.label :title %>
   <%= f.text_field :title %>
@@ -7,10 +7,10 @@
   <%= f.text_field :photo_url %>
 
   <%= f.label :ingredients %>
-  <%= f.text_area :ingredients,  :class => 'form_fix' %>
+  <%= f.text_area :ingredients  %>
 
   <%= f.label :directions %>
-  <%= f.text_area :directions , :class => 'form_fix' %>
+  <%= f.text_area :directions  %>
 
 
   <%= f.submit %>

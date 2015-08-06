@@ -9,10 +9,6 @@ h1 {
 h2, h3 {
   text-align: center;
 }
-textarea {
-  height: 100px;
-  width: 300px;
-}
 
 /***********  IMAGES  ***********/
 
@@ -125,23 +121,28 @@ nav.temp_nav > a {
 /***********  FORMS  ***********/
 
 form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+form.new_form {
   background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
   background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  margin:auto;
+  margin: 0 auto;
   position:relative;
-  width:45%;
-  height:450px;
+  width:40%;
+  height:525px;
   font-family: Tahoma, Geneva, sans-serif;
-  font-size: 14px;
-  font-style: italic;
+  font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  color: #09C;
+  font-family: 'Dosis', sans-serif;
+  color: #74AFAD;
   text-decoration: none;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  padding:10px;
+  padding:20px;
   border: 1px solid #999;
   border: inset 1px solid #333;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
@@ -149,17 +150,22 @@ form {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 input {
-  width: 400px;
+  width: 500px;
   display:block;
   border: 1px solid #999;
   height: 25px;
+  margin-bottom: .5em;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
-.form_fix {
+textarea {
+  height: 150px;
+  width: 500px;
   display: block;
+  margin-bottom: .5em;
 }
+
 
 
 
