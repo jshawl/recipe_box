@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   skip_before_action :authenticate
 
   def index
-      @recipes = User.find(session[:user]["id"]).recipes
+      @user = User.find(session[:user]["id"])
+      @recipes = @user.recipes.order(created_at: :asc)
   end
   def show
       @recipe = Recipe.find(params[:id])
@@ -52,7 +53,7 @@ class UsersController < ApplicationController
 
    def sign_out
      reset_session
-     flash[:notice] = "Bon appetit!!!"
+     flash[:notice] = "Signed out, happy cooking!!!"
      redirect_to root_url
    end
 

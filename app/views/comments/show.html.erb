@@ -8,14 +8,16 @@
       <%= image_tag @recipe.photo_url %>
   </div>
   <div class="child_show_flex">
-      <p>Ingredients: <%= @recipe.ingredients %></p>
+      <h4>Ingredients: </h4>
+      <p class="indent"><%= @recipe.ingredients %></p>
   </div>
 </div>
-<p>Preparation: <%= @recipe.directions %></p>
+<h4>Preparation:</h4>
+<p><%= @recipe.directions %></p>
 
 <div class="comment">
   <p>Comment: <%= @comment.content %></p>
-  <p><%= @comment.created_at %></p>
+  <p class="indent"><%= @comment.created_at %></p>
 </div>
 
 
@@ -26,4 +28,4 @@
 
 <footer>
 
-</footer>  
+</footer>

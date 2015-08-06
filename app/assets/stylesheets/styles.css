@@ -8,6 +8,7 @@ h1 {
 }
 h2, h3 {
   text-align: center;
+  font-family: 'Dosis', sans-serif;
 }
 
 /***********  IMAGES  ***********/
@@ -46,6 +47,8 @@ nav.main_nav > a {
     line-height: 3em;
     color: #fff;
     text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.10em;
 }
 nav > a:hover {
   color: rgb(217,133,59);
@@ -82,11 +85,18 @@ nav > a:hover {
 /***********  VIEWS  ***********/
 
 .flash {
-  text-align: left;
+  text-align: center;
   margin-top: 100px;
+  
 }
 .prep {
  background-color: #D9853B;
+ width: 100%;
+ margin: 0;
+ padding: 1em;
+}
+.indent {
+  margin-left: 20%;
 }
 p{
   font-size: 1.25em;
@@ -101,21 +111,29 @@ p{
   border-radius: 25px;
   box-shadow: 2px 2px 5px;
 }
-
-/***********  CONVERTER  ***********/
-
-nav.temp_nav {
+/***********  TEMPS  ***********/
+ul.temp_nav {
   text-align: center;
 }
-
-nav.temp_nav > a {
+ul.temp_nav > li {
     margin: 1em 0;
     color: #74AFAD;
-    text-decoration: none;
+    cursor: pointer;
+    list-style-type: none;
+    display: inline;
+    padding: 1em;
+    font-size: 2em;
+    font-family: 'Dosis', sans-serif;
 }
-
-
-
+ul.temp_nav > li:hover {
+  color: rgb(217,133,59);
+}
+.temps_hide {
+  display:none;
+}
+.temps_show{
+  display: block;
+}
 
 
 /***********  FORMS  ***********/
