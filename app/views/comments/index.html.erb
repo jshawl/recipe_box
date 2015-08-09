@@ -4,14 +4,16 @@
 <h3><%= @recipe.title %></h3>
 <div class="container_show">
   <div class="child_show">
-      <p>Ingredients: <%= @recipe.ingredients %></p>
+    <p>Ingredients: <%= simple_format(@recipe.ingredients) %></p>
   </div>
   <div class="child_show">
       <%= image_tag @recipe.photo_url , :class => 'photo_size' %>
   </div>
 </div>
-
-<p class="prep">Preparation: <%= @recipe.directions %></p>
+<div class="prep">
+  <h4>Preparation:</h4>
+  <p><%= simple_format(@recipe.directions) %></p>
+</div>
 
 <h4>Comments:</h4>
 <% @comments.each do |comment| %>

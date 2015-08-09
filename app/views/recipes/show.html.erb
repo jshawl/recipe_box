@@ -5,7 +5,7 @@
 <div class="container_show">
   <div class="child_show">
       <h4>Ingredients:</h4>
-      <p class="indent"><%= @recipe.ingredients %></p>
+      <p><%= simple_format(@recipe.ingredients) %></p>
   </div>
   <div class="child_show">
       <%= image_tag @recipe.photo_url %>
@@ -15,7 +15,7 @@
 
 <div class="prep">
   <h4>Preparation:</h4>
-  <p><%= @recipe.directions %></p>
+  <p><%= simple_format(@recipe.directions) %></p>
 
 
   <%= link_to 'View comments' , recipe_comments_path(@recipe) %>
