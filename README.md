@@ -17,11 +17,12 @@
 
   Built this app with a full-stack of HTML, CSS, Jquery and Ruby on Rails.  This is my first Rails application
   so I kept it pretty simple, more just experimenting along the way with the code and trying to familiarize
-  myself with Rails.
+  myself with Rails.  I wrote out the CSS myself for the layout and the User Authorization for Ruby.  I did use the   BCrypt Gem for password protection.  
 
 # Approach:
 
-  Trying to write most of the code myself to learn Rails and keep my GEMS to a minimum.
+  Trying to write most of the code myself to learn Rails and keep my GEMS to a minimum.  I wanted to get a firm
+  understanding of the flow of Rails before I started to add some GEMS.  
 
 # Unsolved Issues:
 
