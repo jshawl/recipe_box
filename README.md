@@ -16,9 +16,10 @@
 
 # Approach:
 
-    Trying to write most of the code myself to learn Rails and keep my GEMS to a minimum.
+  Trying to write most of the code myself to learn Rails and keep my GEMS to a minimum.
 
 # Unsolved Issues:
 
-    I need to finish my 2nd static page the converter.  Also, I need to update the user authentication so that
-    user's can only update and edit their own recipes.  This proved challenging with GEMS.
+  I need to finish my 2nd static page the converter.  Also, I need to update
+  the user authentication so that user's can only update and edit their own recipes.
+  This proved challenging without GEMS.
