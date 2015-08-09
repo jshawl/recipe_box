@@ -6,6 +6,11 @@
   convert liquid and weight measurements from user input.
 
   Link to Recipe Box:  https://wdi-recipe-box.herokuapp.com/
+  
+# Installation: 
+  
+  If you wish to add install this app on your machine, please fork this repo and then clone down.  Send me a pull
+  request with your new addition.  
 
 
 # Technologies:
