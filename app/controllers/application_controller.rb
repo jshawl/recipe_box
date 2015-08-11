@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
     before_action :authenticate  # if they try to go to anywhere in the website, except for user actions, there redirected to sign_in page
+    # excellent code comments!
 
   private
   def authenticate

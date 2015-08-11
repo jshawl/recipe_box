@@ -8,3 +8,6 @@ first_recipe = Recipe.create(title:"PBJ Sandwich", ingredients:"Peanut Butter, J
 second_recipe = Recipe.create(title:"Turkey Sandwich", ingredients:"Sliced turkey, mayo, lettuce and sliced tomatoe", directions:"Spread mayo on one side of each piece of bread, put rest of ingredients in middle of two pieces of bread and enjoy!!!", photo_url:"http://cdn.sheknows.com/articles/2011/05/turkey-sandwich.jpg")
 Comment.create(content:"This is an amazing sandwich", recipe: first_recipe )
 Comment.create(content:"I wish the description, was more descriptive", recipe: second_recipe )
+
+# Excellent seeds! I recommend creating User seeds as well. This will help you test out the functionality
+# and associations between the different models.

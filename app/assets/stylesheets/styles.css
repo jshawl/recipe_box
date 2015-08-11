@@ -8,6 +8,7 @@ body {
 }
 h1 {
   font-family: 'Dosis', sans-serif;
+  /* Love this font!! */
 }
 h2, h3 {
   text-align: center;
@@ -79,6 +80,9 @@ nav.main_nav > a {
     color: #fff;
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
+    /* I've seen this repeated a few times. Can you think of a way to apply these fonts, but only mention the font-name once?
+     * This will allow you to easily update in the future.
+     * */
     font-size: 1.10em;
 }
 nav > a:hover {
@@ -192,6 +196,7 @@ form.new_form {
   text-align: left;
   background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
   background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  /* excellent!! remember to include a non vendor-prefixed version as well for the future. */
   margin: 0 auto;
   position:relative;
   width:40%;
@@ -223,6 +228,9 @@ input, button {
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  /* or use a gem like https://github.com/ai/autoprefixer-rails to
+   * automatically prefix for you
+   * */
 }
 textarea {
   height: 150px;

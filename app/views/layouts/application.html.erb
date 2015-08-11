@@ -12,11 +12,13 @@
     <h1 class="logo">Recipe Box</h1>
     <nav class="main_nav">
     <% if session[:user] %>
+      <!-- could also use a current_user helper like devise -->
       <%= link_to "All Recipes" , recipes_path %>
       <%= link_to "User Recipes" , user_recipes_path %>
       <%= link_to "Create New Recipe" , new_recipe_path(@recipe) %>
       <%= link_to "Temps" , temp_path %>
       <%= link_to "Converter" , converter_path %>
+      <!-- can you think of a way to show to the user which page (s)he is currently on? -->
       <a href="/sign_out"><%= session[:user]["username"] %>: sign out</a>
     <% else %>
       <a href="/sign_in">Sign in</a>

@@ -1,5 +1,5 @@
 $( document).ready (function(){
-
+  // great to see some JS in this app!!
   $("#poultry").on( "click" , function(){
     $(".hide").addClass("temps_hide");
     $("div.poultry").removeClass("temps_hide");
